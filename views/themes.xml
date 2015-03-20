@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+
+    <template id="website_font_awesome_4_3.assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+        <xpath expr='//script[@src="/website/static/src/js/website.editor.js"]' position="after">
+            <script type="text/javascript" src="/website_font_awesome_4_3/static/src/js/website.editor.js"></script>
+        </xpath>
+    </template>
+
+    <template id="website_font_awesome_4_3.theme" inherit_id="website.theme" name="Fix awesome in theme">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" href="/website_font_awesome_4_3/static/src/css/font-awesome.min.css" type="text/css"/>
+        </xpath>
+    </template>
+
+</data>
+</openerp>
